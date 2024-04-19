@@ -18,4 +18,9 @@ describe('Triangle', () => {
     const scalTriangle = new Triangle(4,5,7);
     expect(scalTriangle.checkType()).toEqual("scalene triangle");
   });
+
+  test('should correctly determine whether three lengths make an isosceles triangle', () => {
+    const isosTriangle = newTriangle(5,5,7);
+    expect(isosTriangle.checkType()).toEqual("isosceles triangle");
+  })
 });
