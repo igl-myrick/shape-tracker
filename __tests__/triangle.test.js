@@ -20,7 +20,7 @@ describe('Triangle', () => {
   });
 
   test('should correctly determine whether three lengths make an isosceles triangle', () => {
-    const isosTriangle = newTriangle(5,5,7);
+    const isosTriangle = new Triangle(5,5,7);
     expect(isosTriangle.checkType()).toEqual("isosceles triangle");
   })
 });
